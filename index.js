@@ -107,7 +107,7 @@ async function getAIReply(userMessage) {
 
     const data = await response.json();
     return data.content?.[0]?.text || fallbackReply();
-  } } catch (err) {
+  }  catch (err) {
     console.error('AI Error full:', JSON.stringify(err));
     console.error('API Key exists:', !!ANTHROPIC_API_KEY);
     return fallbackReply();
