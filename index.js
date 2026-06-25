@@ -113,7 +113,7 @@ async function getAIReply(userMessage) {
     return fallbackReply();
   }
   }
-}
+
 
 function fallbackReply() {
   return `আসসালামু আলাইকুম! 👋 
